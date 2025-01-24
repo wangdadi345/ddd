@@ -1,8 +1,3 @@
 #include<stdio.h>
-int main(){
-   int n,name[10]={0};
-   //scanf("%s",name);
-   for(n=0;n<10;n++)
-   printf("%d",name[n]);
-    return 0;
-}
+
+   void main(){ int **k, *a, b=100; a=&b; k=&a; printf("%d\n", **k); }

@@ -1,15 +1,25 @@
-#include <stdio.h>
+ #include<stdio.h>
 int main(){
-    printf("请输入两行文字每行40个字符");
-    int a[2]={1,4};
-    // int i,n;
-    // scanf("%s",a);
-    // for(i=0;i<2;i++){
-    //     for(n=0;n<40;n++){
-    //         if(a[i][n]==)
-    //     }
-    // }
-    int *p;
-    p=a;
-    printf("%d",p[1]);
+    int a=1,b=0;//a是空瓶书b是喝了几瓶cd
+    cycle:
+    printf("请输入有几个空瓶:\n");
+    scanf("%d",&a);
+    while(a>0){
+        if(a<2) break;
+        else if(a==2)
+        {
+            b++;
+            a=0;
+            break;
+        }
+        a-=3;b++;a++;}
+        printf("最多喝%d瓶\n",b);
+        b=0;
+   if(a!=0)
+    goto cycle;
+        
+    
+ 
+
+
 }
